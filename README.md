@@ -1,0 +1,2 @@
+# CppCppConsoleAPI
+Console application API
