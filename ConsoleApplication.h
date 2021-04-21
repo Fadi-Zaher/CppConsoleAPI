@@ -1,0 +1,7 @@
+#ifndef CONSOLE_APPLICATION_H
+#define	CONSOLE_APPLICATION_H
+
+
+
+
+#endif
