@@ -3,23 +3,13 @@
 #include <string.h>
 #include <iostream>
 
-#include "Command.h"
+#include "../Commands/CommandsApi.h"
+#include "AppCommands.h"
 
 
 
 
 
-
-//Echo demonstrates a command execution function.
-// the command prints the parameters it receives.
-bool CommandEcho(std::vector<std::string> params)
-{
-   for (auto it = params.begin(); it<params.end(); it++) {
-      printf(it->c_str());
-   }
-
-   return(true);
-}
 
 
 // Main function.
@@ -31,7 +21,7 @@ int main()
    // Initialize the commands object.
    Commands* pCommands = CommandsInit();
 
-   // Assign the command function to the command text.
+   // Assign the echo command function to the command list.
    CommandAdd(pCommands, CMD_ECHO, CommandEcho);
    
    // Store user input text.
