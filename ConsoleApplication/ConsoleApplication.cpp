@@ -21,6 +21,8 @@ int main()
    // Initialize the commands object.
    Commands* pCommands = CommandsInit();
 
+
+
    // Assign the echo command function to the command list.
    CommandAdd(pCommands, CMD_ECHO, CommandEcho);
    CommandAdd(pCommands, CMD_EXIT, CommandExit);
