@@ -23,6 +23,11 @@ int main()
 
    // Assign the echo command function to the command list.
    CommandAdd(pCommands, CMD_ECHO, CommandEcho);
+   CommandAdd(pCommands, CMD_EXIT, CommandExit);
+   CommandAdd(pCommands, CMD_ADD, CommandAddition);
+   CommandAdd(pCommands, CMD_SUB, CommandSubtraction);
+   CommandAdd(pCommands, CMD_MUL, CommandMultiplying);
+   CommandAdd(pCommands, CMD_DIV, CommandDividing);
    
    // Store user input text.
    std::string command_line;
