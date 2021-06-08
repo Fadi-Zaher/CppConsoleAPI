@@ -32,7 +32,7 @@ bool CommandAddition(std::vector<std::string> params)
     for (auto it = params.begin(); it < params.end(); it++)
         sum = sum + atoi(it->c_str());
 
-   printf("the sum is : %d\n", sum);
+   printf("%d\n", sum);
    return true;
 }
 /*subtractcion function */
@@ -47,7 +47,7 @@ bool CommandSubtraction(std::vector<std::string> params)
     for (auto it = temp.begin() + 1; it < temp.end(); it++)
         sum = sum - atoi(it->c_str());
 
-    printf("the sum is : %d\n", sum);
+    printf("%d\n", sum);
     return true;
 }
 
@@ -59,7 +59,7 @@ bool CommandMultiplying(std::vector<std::string> params)
         sum =sum*atoi(it->c_str());
    
 
-    printf("the sum is : %d\n", sum);
+    printf("%d\n", sum);
     return true;
 }
 
@@ -82,7 +82,7 @@ bool CommandDividing(std::vector<std::string> params)
         }
         sum = sum / atoi(it->c_str());
     }
-    printf("the sum is : %d\n", sum);
+    printf("%d\n", sum);
     return true;
 }
 
